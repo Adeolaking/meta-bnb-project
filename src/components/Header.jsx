@@ -34,7 +34,7 @@ function Header() {
   },
   {
     name: "Place to stay",
-    linkTo: "/placetostay",
+    linkTo: '/placetostay',
     id: "placeToStay__link",
     title: "place to stay",
   },
@@ -120,10 +120,10 @@ function Header() {
             >
               <ul className="flex flex-col gap-2  md:flex-row md:gap-[48px] md:p-0     lg:gap-[48px] lg:p-0 ">
                 { navLinkList.map(
-                  navdata =>{
+                  (navdata, key) =>{
                     return(
-                      <li className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
-                        <a href={navdata.linkTo}>{navdata.name}</a>
+                      <li key={key} className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                        <a href={navdata.linkTo} >{navdata.name}</a>
                       </li>
                     )
                   }
