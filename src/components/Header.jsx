@@ -14,6 +14,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
+import { NavLink } from "react-bootstrap";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -69,11 +70,11 @@ function Header() {
           />
         </div>
 
-        <nav class="bg-white  flex flex-col justify-between items-center">
+        <nav className="bg-white  flex flex-col justify-between items-center">
           <button
             onClick={() => setNavbar(!navbar)}
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -121,8 +122,9 @@ function Header() {
               <ul className="flex flex-col gap-2  md:flex-row md:gap-[48px] md:p-0     lg:gap-[48px] lg:p-0 ">
                 { navLinkList.map(
                   (navdata, key) =>{
+                    console.log(navdata.linkTo)
                     return(
-                      <li key={key} className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                      <li key={key} className="text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
                         <a href={navdata.linkTo} >{navdata.name}</a>
                       </li>
                     )
