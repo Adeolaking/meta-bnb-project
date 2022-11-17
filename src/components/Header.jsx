@@ -120,17 +120,18 @@ function Header() {
               } left-20 z-10 flex flex-col items-center text-white p-10 mt-4 bg-gray-500 rounded-lg border md:left-[190px] border-gray-100 lg:flex-row lg:gap-28  lg:rounded-none lg:border-none lg:bg-white gap-5`}
             >
               <ul className="flex flex-col gap-2  md:flex-row md:gap-[48px] md:p-0     lg:gap-[48px] lg:p-0 ">
-                { navLinkList.map(
-                  (navdata, key) =>{
-                    console.log(navdata.linkTo)
-                    return(
-                      <li key={key} className="text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
-                        <a href={navdata.linkTo} >{navdata.name}</a>
-                      </li>
-                    )
-                  }
-                )
-                  }
+              <li className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                  <a href="/">Home</a>
+                </li>
+                <li className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                  <a href="/placetostay">Place To Stay</a>
+                </li>
+                <li className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                  <a href="/">NFTs</a>
+                </li>
+                <li className=" text-white hover:text-blue-600 lg:text-[#434343] cursor-pointer text-[20px] font-[Red Rose] font-normal leading-[25px] ">
+                  <a href="/">Community</a>
+                </li>
                 
               </ul>
 
