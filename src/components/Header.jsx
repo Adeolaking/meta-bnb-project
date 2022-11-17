@@ -35,7 +35,7 @@ function Header() {
   },
   {
     name: "Place to stay",
-    linkTo: '/placetostay',
+    linkTo: '#placetostay',
     id: "placeToStay__link",
     title: "place to stay",
   },
